@@ -12,12 +12,15 @@ def send_image_to_ai(image_url):
   }
 
   message = """
+
   ### qustion
+  Your task is output item's name from the image.
   What items did you buy?
 
   ### requirement
   - Please speak in Japanese.
-  - You should provide only item's name.
+  - You should provide only items's name copied the reciept paper.
+  - You should provide only items's name changed general name.
   - You should follow the format below.
 
   - おにぎり
@@ -58,6 +61,7 @@ def send_image_to_ai(image_url):
 
   prompt = """
   ### question
+  - your task is calculate the virtual water of the items.
   - calculate the virtual water of the items he bought.
 
   ### requirement
@@ -66,8 +70,10 @@ def send_image_to_ai(image_url):
   - If you can't accommodate the request, please say so.
   - Please provide only the answer such as below.
 
-  - 品物名: 200L
-  - 合計: 200L
+  - おにぎり： 100L
+  - お茶： 50L
+  - お弁当： 200L
+  - 合計： 350L
   """
 
   payload = {
