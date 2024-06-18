@@ -36,7 +36,7 @@ async def on_message(message: discord.Message):
                 ]
             )
 
-            embed.set_footer(text='gpt-4o-2024-05-13', icon_url='chatgpt-logo.png')
+            embed.set_footer(text='gpt-4o-2024-05-13', icon_url='https://github.com/dOtOb9/calculate-virtual-water-dsicord-bot/blob/main/chatgpt-logo.png?raw=true')
 
     await message.channel.send(embed=embed)
 
