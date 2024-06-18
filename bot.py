@@ -10,7 +10,6 @@ bot = discord.Bot(intents=intents)
 
 
 @bot.event
-@bot.event
 async def on_message(message: discord.Message):
     if message.author.bot: return
     
@@ -30,7 +29,7 @@ async def on_message(message: discord.Message):
                         value=items_text
                     ),
                     discord.EmbedField(
-                        name='仮想水量', 
+                        name='仮想水量💧', 
                         value=virtual_water_text
                     )
                 ]

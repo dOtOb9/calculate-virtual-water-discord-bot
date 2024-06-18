@@ -66,10 +66,8 @@ def send_image_to_ai(image_url):
   - If you can't accommodate the request, please say so.
   - Please provide only the answer such as below.
 
-  - おにぎり: 100L
-  - お茶: 50L
-  - お弁当: 200L
-  - 合計: 350L
+  - 品物名: 200L
+  - 合計: 200L
   """
 
   payload = {
